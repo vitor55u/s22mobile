@@ -1,93 +1,29 @@
-  TaskMaster Mobile – Relatório de Pré-Lançamento
+TaskMaster Mobile – Relatório de Pré-Lançamento
 
-  Seção 1 – Requisitos Técnicos e Políticas
+Seção 1 – Requisitos Técnicos e Diretrizes
 
-  Ícones e Vídeos
-Google Play
-- Resolução mínima: 512 × 512 px  
-- Formato: PNG  
-- Tamanho máximo: até 1024 kB
-
-App Store
-- Resolução mínima: 1024 × 1024 px  
-- Formato: PNG (sem transparência)
-
-Diferença principal:  
-A App Store exige ícones de maior resolução e não permite transparência.  
-Além disso, os vídeos promocionais seguem formatos e proporções específicas em cada loja (Play Store usa vídeos do YouTube, App Store usa vídeos curtos diretamente hospedados).
-
----
-
+Ícones e Vídeos
+No Google Play, o ícone deve ter no mínimo 512×512 px em formato PNG, e na App Store, 1024×1024 px, também em PNG, sem transparência. A principal diferença é a resolução e a proibição de fundo transparente na App Store. Os vídeos seguem padrões distintos: a Play Store usa vídeos do YouTube e a App Store vídeos curtos enviados diretamente.
 
 Políticas e Permissões
-- O Google Play rejeita aplicativos que solicitam permissões não essenciais para sua funcionalidade principal.  
-- As permissões devem seguir o princípio da necessidade mínima, garantindo a privacidade e segurança do usuário.  
-- A Política de Privacidade deve estar publicada e acessível no aplicativo e na página da store, descrevendo:
-  - Quais dados são coletados.
-  - Como são armazenados e utilizados.
-  - Com quem podem ser compartilhados.
+O Google Play rejeita aplicativos que pedem permissões desnecessárias. As permissões devem ser mínimas, protegendo a privacidade do usuário. A política de privacidade deve explicar os dados coletados, seu uso e possíveis compartilhamentos. Políticas claras aumentam a confiança e reduzem o risco de reprovação.
 
-Importância:  
-As políticas claras aumentam a transparência e evitam rejeição durante a revisão.
+Certificação e Assinatura
+No Android, o app é assinado com um arquivo keystore controlado pelo desenvolvedor. No iOS, a Apple emite certificados e valida o app por meio de um perfil de provisionamento. No Android a chave é do desenvolvedor; no iOS, a assinatura depende da Apple.
 
----
+Seção 2 – Recursos Visuais e Qualidade
 
-Certificados
-Android (Keystore)
-- Utiliza um arquivo keystore para assinar digitalmente o APK/AAB.  
-- Garante autenticidade e integridade do app nas atualizações.
+Screenshots
+As capturas de tela devem mostrar as principais funções, com visual limpo e realista, usando mockups de dispositivos. A Play Store foca em cores e contraste; a App Store em clareza e estética.
 
-iOS (Apple Developer)
-- Requer certificados emitidos pela conta de desenvolvedor da Apple.  
-- O app é assinado e validado via provisioning profile, garantindo segurança no ecossistema da App Store.
+Testes Beta
+Antes do lançamento, os testes devem ser feitos com Firebase Test Lab (Android) e TestFlight (iOS), permitindo simular o uso real e corrigir falhas.
 
-Diferença:  
-No Android, o desenvolvedor controla a chave; no iOS, a assinatura depende da validação pela Apple.
-
----
-
- Seção 2 – Recursos Visuais e Qualidade
-Briefing de Screenshots
-Recomendações:
-- Use as principais telas do aplicativo (ex: login, dashboard, tarefa concluída).  
-- Mostre funcionalidades centrais de forma limpa e realista.  
-- Utilize simulações de dispositivos reais (mockups oficiais Android e iPhone).  
-- Siga diretrizes das lojas:
-  - Google Play: foco em cores e contraste.
-  - App Store: foco em estética e clareza.
-
----
-
- Testes Beta
-Ferramentas:
-- Android → Firebase Test Lab  
-- iOS → TestFlight
-
-Essas plataformas permitem testar o app em dispositivos reais, coletar feedback de usuários e identificar falhas antes da publicação oficial.
-
----
-
- Debugging e Testes de Regressão
-Importância:  
-- Após corrigir um erro crítico, é essencial executar testes de regressão para garantir que a correção não causou novos problemas.  
-- Mantém a estabilidade e qualidade do aplicativo antes do envio às stores.
-
----
+Depuração e Testes de Regressão
+Após corrigir erros, é importante testar novamente para garantir que as mudanças não causem novos problemas, mantendo a estabilidade do app.
 
 Pesquisa Complementar
-Ao elaborar o plano de publicação:
-- Analise os critérios de aprovação de cada loja.  
-- Avalie os motivos comuns de rejeição (permissões incorretas, política ausente, ícones fora do padrão).  
-- Crie um checklist de qualidade antes do envio.
+Analise os critérios de aprovação e causas comuns de rejeição, como permissões incorretas ou ícones fora do padrão. Um checklist ajuda a garantir qualidade antes do envio.
 
----
-
- Reflexão
-Durante o processo, a curiosidadeimpulsiona a exploração de melhores práticas e ferramentas, enquanto a motivação mantém o foco em entregar um produto final de alta qualidade.  
-Essas atitudes são cruciais para evitar erros simples e garantir que o aplicativo seja aprovado sem rejeições nas stores.
-
----
-
- Entrega: Semana 22  
- Responsável: Ezequiel da Cruz
- Repositório: https://github.com/Ezequiel755/Readme-Mobile/new/main?readme=1
+Reflexão
+A curiosidade incentiva a busca por boas práticas e a motivação ajuda a manter o foco, resultando em um produto de qualidade e com maiores chances de aprovação.
